@@ -1,0 +1,53 @@
+.lecture, .preparation-questions, .tickets {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  #examQuestions {
+    display: none;
+  }
+
+
+  .title {
+    text-align: center;
+  }
+  
+  .button {
+    color:black;
+    background-color: blue;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .lecture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  

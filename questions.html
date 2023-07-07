@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="preparation-questions">
+        <h2>Вопросы для подготовки</h2>
+        <ol>
+          <li>
+            <p>Вопрос 1</p>
+            <ul>
+              <li><input type="radio" name="question1" value="true"> Верно</li>
+              <li><input type="radio" name="question1" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 2</p>
+            <ul>
+              <li><input type="radio" name="question2" value="true"> Верно</li>
+              <li><input type="radio" name="question2" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 3</p>
+            <ul>
+              <li><input type="radio" name="question3" value="true"> Верно</li>
+              <li><input type="radio" name="question3" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 4</p>
+            <ul>
+              <li><input type="radio" name="question4" value="true"> Верно</li>
+              <li><input type="radio" name="question4" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 5</p>
+            <ul>
+              <li><input type="radio" name="question5" value="true"> Верно</li>
+              <li><input type="radio" name="question5" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 6</p>
+            <ul>
+              <li><input type="radio" name="question6" value="true"> Верно</li>
+              <li><input type="radio" name="question6" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 7</p>
+            <ul>
+              <li><input type="radio" name="question7" value="true"> Верно</li>
+              <li><input type="radio" name="question7" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 8</p>
+            <ul>
+              <li><input type="radio" name="question8" value="true"> Верно</li>
+              <li><input type="radio" name="question8" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 9</p>
+            <ul>
+              <li><input type="radio" name="question9" value="true"> Верно</li>
+              <li><input type="radio" name="question9" value="false"> Неверно</li>
+            </ul>
+          </li>
+          <li>
+            <p>Вопрос 10</p>
+            <ul>
+              <li><input type="radio" name="question10" value="true"> Верно</li>
+              <li><input type="radio" name="question10" value="false"> Неверно</li>
+            </ul>
+          </li>
+          
+        </ol>
+      </div>
+
+      <h2><a href="" class="button" style="display: inline;">Проверить правилность</a></h2>
+
+      <script>
+        document.querySelector(".button").addEventListener("click", function() {
+          var questions = document.querySelectorAll(".preparation-questions li");
+      
+          questions.forEach(function(question) {
+            var answer = question.querySelector("input[type='radio']:checked");
+      
+            if (answer) {
+              if (answer.value !== "false") {
+                question.style.color = "green";
+              } else {
+                question.style.color = "red";
+              }
+            }
+          });
+        });
+      </script>
+
+</body>
+</html>
